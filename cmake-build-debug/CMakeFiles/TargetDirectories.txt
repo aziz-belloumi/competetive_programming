@@ -1,0 +1,3 @@
+C:/Users/bello/OneDrive/Desktop/c++/half even = half odd/cmake-build-debug/CMakeFiles/half_even___half_odd.dir
+C:/Users/bello/OneDrive/Desktop/c++/half even = half odd/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/bello/OneDrive/Desktop/c++/half even = half odd/cmake-build-debug/CMakeFiles/rebuild_cache.dir
