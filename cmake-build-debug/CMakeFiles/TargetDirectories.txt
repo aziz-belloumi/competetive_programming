@@ -1,0 +1,3 @@
+C:/Users/bello/OneDrive/Desktop/c++/vanya and cubes/cmake-build-debug/CMakeFiles/vanya_and_cubes.dir
+C:/Users/bello/OneDrive/Desktop/c++/vanya and cubes/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/bello/OneDrive/Desktop/c++/vanya and cubes/cmake-build-debug/CMakeFiles/rebuild_cache.dir
