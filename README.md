@@ -1,0 +1,6 @@
+- The code starts by reading the number of test cases, t, from the input.
+- For each test case, it reads a dummy string (which is ignored) and then reads input_string, which is the string to be checked.
+- It initializes the string timur with the value "Timur", representing the correct permutation.
+- Both timur and input_string are sorted alphabetically using std::sort.
+- The code compares the sorted timur and input_string. If they are identical, it prints "YES" (indicating input_string is a valid permutation of "Timur").
+- If they are not identical, it prints "NO" (indicating input_string is not a valid permutation).
