@@ -6,7 +6,6 @@ int main() {
     while (t--) {
         int n;
         std::cin >> n;
-
         if (n % 4 != 0) {
             std::cout << "NO" << std::endl;
         } else {
