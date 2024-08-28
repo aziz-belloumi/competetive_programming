@@ -1,0 +1,8 @@
+- The code starts by reading the number of test cases, t, from the input.
+- For each test case, it reads an integer n (the number of candies) and initializes counters for 1-gram and 2-gram candies (count1 and count2), along with total_weight.
+- It then iterates through the n candies, reading each candy's weight, updating total_weight, and incrementing count1 or count2 based on the candy's weight.
+- If the total_weight is odd, it prints "NO" because it's impossible to split the candies into two equal-weight groups.
+- If the total_weight is even, it calculates halfWeight and checks if this weight can be formed using the available candies:
+- If halfWeight can be formed using 2-gram candies, it checks if the remaining weight can be completed using 1-gram candies.
+- If all 2-gram candies are used, it checks if the remaining weight can be achieved using 1-gram candies alone.
+- Depending on the checks, the code prints "YES" if it's possible to split the candies into two equal-weight groups, otherwise, it prints "NO".
