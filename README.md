@@ -1,0 +1,6 @@
+- The code begins by reading an integer n, which represents the total number of cubes available.
+- It initializes variables height to track the pyramid's height, total_cubes_used to keep track of cubes used so far, and current_level to represent the current level of the pyramid.
+- Inside a while (true) loop, the code calculates the number of cubes required for the current level using the formula cubes_for_current_level = current_level * (current_level + 1) / 2.
+- If adding these cubes exceeds n, the loop breaks, as it's not possible to add another level.
+- If the level can be added, total_cubes_used is updated, height is incremented, and the code moves to the next level.
+- Finally, the code prints the maximum height of the pyramid that can be built with n cubes.
