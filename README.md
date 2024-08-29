@@ -1,0 +1,5 @@
+- Read the number of test cases and, for each test case, the number of tasks and the task sequence.
+- Use a map to track the last position where each task appeared in the sequence.
+- As you iterate through the sequence, check if a task reappears with a gap (i.e., other tasks in between). If so, mark the sequence as suspicious.
+- If any task has a gap, print "NO" (suspicious). If no gaps are found, print "YES" (not suspicious).
+- The program ensures tasks are not interrupted by others, which is useful in task scheduling scenarios.
