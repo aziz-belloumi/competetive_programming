@@ -1,0 +1,9 @@
+# ninja log v5
+10	1299	7466138127112539	CMakeFiles/suspicious.dir/main.cpp.obj	d07a07ecfd5c3c4a
+1302	2330	7466138137398083	suspicious.exe	4fe03b5290d665f7
+6	1078	7466149358483264	CMakeFiles/suspicious.dir/main.cpp.obj	d07a07ecfd5c3c4a
+1079	2283	7466149370519602	suspicious.exe	4fe03b5290d665f7
+6	1125	7466162489942092	CMakeFiles/suspicious.dir/main.cpp.obj	d07a07ecfd5c3c4a
+1125	2127	7466162499938300	suspicious.exe	4fe03b5290d665f7
+6	1004	7466163058872590	CMakeFiles/suspicious.dir/main.cpp.obj	d07a07ecfd5c3c4a
+1005	2037	7466163069182019	suspicious.exe	4fe03b5290d665f7
