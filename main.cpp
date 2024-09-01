@@ -1,29 +1,26 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 int main() {
-    int t ;
+    short t ;
     std::cin >> t;
     while(t--) {
         short n ;
         std::cin >> n ;
         std::vector<short> a(n) ;
-        short min = 10 ;
-        short pos_min = -1 ;
         for(short i = 0; i < n ; i++) {
             std::cin >> a[i] ;
-            if(min > a[i]) {
-                min = a[i] ;
-                pos_min = i ;
-            }
         }
-        long long product = 1 ;
+        auto maxElementIter = std::max_element(a.begin(), a.end());
+        short diff = *maxElementIter;
         for(short i = 0; i < n ; i++) {
-            if(pos_min == i) {
-                a[i] = a[i] + 1 ;
+            for(short j = 0; j < n ; j++) {
+                if(i != j && std::abs(a[i] - a[j] ) < diff) {
+                    diff = std::abs(a[i] - a[j] ) ;
+                }
             }
-            product *= a[i] ;
         }
-        std::cout << product << std::endl ;
+        std::cout << diff << std::endl ;
     }
     return 0;
 }
