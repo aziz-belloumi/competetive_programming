@@ -1,0 +1,3 @@
+C:/Users/bello/OneDrive/Desktop/c++/collecting coins/cmake-build-debug/CMakeFiles/collecting_coins.dir
+C:/Users/bello/OneDrive/Desktop/c++/collecting coins/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/bello/OneDrive/Desktop/c++/collecting coins/cmake-build-debug/CMakeFiles/rebuild_cache.dir
