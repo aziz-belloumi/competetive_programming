@@ -1,22 +1,18 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
+#include <set>
 int main() {
     int t;
     std::cin >> t;
     while (t--) {
         int n;
         std::cin >> n;
-        std::vector<int> a(n);
-        for (int i = 0; i < n; i++) {
-            std::cin >> a[i];
+        std::set<long> container ;
+        for(int i = 0 ; i < n ; i++) {
+            long a ;
+            std::cin >> a ;
+            container.insert(a);
         }
-        int minElement = *std::min_element(a.begin(), a.end());
-        int minCandies = 0;
-        for (int value : a) {
-            minCandies += value - minElement;
-        }
-        std::cout << minCandies << std::endl;
+        container.size() == n ? std::cout << "YES"<< std::endl : std::cout << "NO"<< std::endl ;
     }
     return 0;
 }
