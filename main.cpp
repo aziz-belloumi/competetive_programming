@@ -2,25 +2,21 @@
 #include <vector>
 #include <algorithm>
 int main() {
-    short t ;
+    int t;
     std::cin >> t;
-    while(t--) {
-        short n ;
-        std::cin >> n ;
-        std::vector<short> a(n) ;
-        for(short i = 0; i < n ; i++) {
-            std::cin >> a[i] ;
+    while (t--) {
+        int n;
+        std::cin >> n;
+        std::vector<int> a(n);
+        for (int i = 0; i < n; i++) {
+            std::cin >> a[i];
         }
-        auto maxElementIter = std::max_element(a.begin(), a.end());
-        short diff = *maxElementIter;
-        for(short i = 0; i < n ; i++) {
-            for(short j = 0; j < n ; j++) {
-                if(i != j && std::abs(a[i] - a[j] ) < diff) {
-                    diff = std::abs(a[i] - a[j] ) ;
-                }
-            }
+        int minElement = *std::min_element(a.begin(), a.end());
+        int minCandies = 0;
+        for (int value : a) {
+            minCandies += value - minElement;
         }
-        std::cout << diff << std::endl ;
+        std::cout << minCandies << std::endl;
     }
     return 0;
 }
