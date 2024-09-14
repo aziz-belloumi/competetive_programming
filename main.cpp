@@ -1,28 +1,16 @@
 #include <iostream>
+#include <cmath>
 int main() {
-    int t;
-    std::cin >> t;
-    while (t--) {
-        int n;
-        std::cin >> n;
-        int max = 0;
-        int currentLength = 0;
-        for (int i = 0; i < n; i++) {
-            int a;
-            std::cin >> a;
-            if (a == 0) {
-                currentLength++;
-            } else {
-                if (max < currentLength) {
-                    max = currentLength;
-                }
-                currentLength = 0;
-            }
-        }
-        if (max < currentLength) {
-            max = currentLength;
-        }
-        std::cout << max << std::endl;
+    std::string name;
+    std::cin >> name;
+    int total_rotations = 0;
+    char current_position = 'a';
+    for (char target : name) {
+        int clockwise_distance = abs(target - current_position);
+        int counterclockwise_distance = 26 - clockwise_distance;
+        total_rotations += std::min(clockwise_distance, counterclockwise_distance);
+        current_position = target;
     }
+    std::cout << total_rotations << std::endl;
     return 0;
 }
